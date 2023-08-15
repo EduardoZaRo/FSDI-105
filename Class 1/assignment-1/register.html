@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Registration system</h1>
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Register</a>
+        </nav>
+
+    </header>
+    <main>
+        <div class="form">
+            <div>
+                <label for="txtEmail">Email:</label>
+                <input type="text" id="txtEmail">
+            </div>
+            <div>
+                <label for="txtPassword">Password:</label>
+                <input type="password" id="txtPassword">
+            </div>
+            <div>
+                <label for="txtFname">First name:</label>
+                <input type="text" id="txtFname">
+            </div>
+            <div>
+                <label for="txtLname">Last name:</label>
+                <input type="text" id="txtLname">
+            </div>
+            <div>
+                <label for="numAge">Age:</label>
+                <input type="number" id="numAge">
+            </div>
+            <div>
+                <label for="numGrade101">Grade 101:</label>
+                <input type="number" id="numGrade101">
+            </div>
+            <div>
+                <label for="numGrade102">Grade 102:</label>
+                <input type="number" id="numGrade102">
+            </div>
+            <div>
+                <label for="numGrade103">Grade 103:</label>
+                <input type="number" id="numGrade103">
+            </div>
+            <button id="btnAdd" onclick="register()">Add</button>
+        </div>
+        <div id="users">
+            <!-- Log registered users -->
+        </div>
+    </main>
+    <script src="./scripts/register.js"></script>
+</body>
+</html>
