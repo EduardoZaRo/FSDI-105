@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/mystyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Users</h1>
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Register</a>
+            <a href="./users.html">Users</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div>
+            <p id="notifications"></p>
+        </div>
+        <div class="form">
+            <div>
+                <label for="txtEmail">Email:</label>
+                <input class="form-control"type="text" id="txtEmail">
+            </div>
+            <div>
+                <label for="txtPassword">Password:</label>
+                <input class="form-control"type="password" id="txtPassword">
+            </div>
+            <div>
+                <label for="txtFname">First name:</label>
+                <input class="form-control"type="text" id="txtFname">
+            </div>
+            <div>
+                <label for="txtLname">Last name:</label>
+                <input class="form-control"type="text" id="txtLname">
+            </div>
+            <div>
+                <label for="txtAge">Age:</label>
+                <input class="form-control"type="number" id="txtAge">
+            </div>
+            <div>
+                <label for="txtGender">Gender:</label>
+                <input class="form-control"  type="text" id="txtGender">
+            </div>
+            <div>
+                <label for="txtPhone">Phone:</label>
+                <input class="form-control" type="tel" id="txtPhone">
+            </div>
+            <div>
+                <label for="txtPayment">Payment:</label>
+                <select class="form-control"  name="txtPaymet" id="selPayment">
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit card</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+            <div>
+                <label for="txtColor">Color:</label>
+                <input class="form-control form-control-color"type="color" id="selColor">
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" id="btnAdd">Add</button>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./scripts/storeManager.js"></script>
+    <script src="./scripts/register.js"></script>
+</body>
+</html>

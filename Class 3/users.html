@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/mystyles.css">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Users</h1>
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Register</a>
+            <a href="./users.html">Users</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>List of users</h2>
+        <div class="table-responsive">
+            <table class="table usersTableContainer">
+                <thead>
+                    <tr>
+                        <th scope="col">Email</th>
+                        <th scope="col">Fname</th>
+                        <th scope="col">Lname</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Payment</th>
+                        <th scope="col">Color</th>
+                    </tr>
+                </thead>
+                <tbody id="usersList">
+                    <tr>
+                        <td colspan="8" style="text-align:center;">No users registered!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./scripts/storeManager.js"></script>
+    <script src="./scripts/users.js"></script>
+</body>
+</html>

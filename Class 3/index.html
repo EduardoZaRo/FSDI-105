@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS vs JQuery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Users</h1>
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./register.html">Register</a>
+            <a href="./users.html">Users</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h3 class="text-center">Login to the system</h3>
+        <div class="container">
+            <div class="mb-3">
+                <input class="form-control" type="email" id="txtEmail" placeholder="Add your email">
+            </div>
+
+
+            <div class="mb-3">
+                <input class="form-control" type="password" id="txtPassword" placeholder="Add your password">
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" onclick="login()">Login</button>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./scripts/storeManager.js"></script>
+    <script src="./scripts/login.js"></script>
+</body>
+</html>
