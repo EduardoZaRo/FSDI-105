@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/mystyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Register system</h1>
+        <nav class="header-nav">
+            <a href="./index.html"><i class="fas fa-home"></i>Home</a>
+            <a href="./register.html"><i class="fas fa-user-plus"></i>Register</a>
+            <a href="./users.html"><i class="fas fa-users"></i>Users</a>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Register system</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="./index.html"><i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./register.html"><i class="fas fa-user-plus"></i>Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./users.html"><i class="fas fa-users"></i>Users</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div>
+            <p id="notifications"></p>
+        </div>
+        <div class="form">
+            <div class="mb-3">
+                <label for="txtEmail">Email:</label>
+                <input class="form-control"type="text" id="txtEmail">
+            </div>
+            <div class="mb-3">
+                <label for="txtPassword">Password:</label>
+                <input class="form-control"type="password" id="txtPassword">
+            </div>
+            <div class="mb-3">
+                <label for="txtFname">First name:</label>
+                <input class="form-control"type="text" id="txtFname">
+            </div>
+            <div class="mb-3">
+                <label for="txtLname">Last name:</label>
+                <input class="form-control"type="text" id="txtLname">
+            </div>
+            <div class="mb-3">
+                <label for="txtAge">Age:</label>
+                <input class="form-control"type="number" id="txtAge">
+            </div>
+            <div class="mb-3">
+                <label for="txtGender">Gender:</label>
+                <input class="form-control"  type="text" id="txtGender">
+            </div>
+            <div class="mb-3">
+                <label for="txtPhone">Phone:</label>
+                <input class="form-control" type="tel" id="txtPhone">
+            </div>
+            <div class="mb-3">
+                <label for="txtPayment">Payment:</label>
+                <select class="form-control"  name="txtPaymet" id="selPayment">
+                    <option value="cash">Cash</option>
+                    <option value="credit">Credit card</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="txtColor">Color:</label>
+                <input class="form-control form-control-color"type="color" id="selColor">
+            </div>
+            <div class="d-grid gap-2 mb-3">
+                <button class="btn btn-primary" id="btnAdd">Register</button>
+            </div>
+            <a href="./index.html">Do you have an account? Login <i class='fas fa-external-link-alt'></i></a>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./scripts/storeManager.js"></script>
+    <script src="./scripts/register.js"></script>
+</body>
+</html>
